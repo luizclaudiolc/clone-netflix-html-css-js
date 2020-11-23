@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/style/main.css">
 
     <!-- Responsividade -->
@@ -33,11 +35,12 @@
         <div class="filme-principal">
             <div class="container">
                 <h3 class="titulo">This Is Us</h3>
+                <span><strong>Top 2 no Brasil hoje</strong></span>
                 <p class="descricao">
                     A série acompanha um grupo de pessoas cujos caminhos se cruzam, fazendo com que as suas histórias se entrelacem de maneira muito peculiar.
                 </p>
             </div>
-            <div class="botoes">
+            <div  class="botoes">
                 <button role="button" class="botao">
                     <i class="fas fa-play"></i>
                     <a href="https://www.youtube.com/watch?v=tefwfQEawtw" target="_blank" rel="noopener noreferrer">ASSIS AGORA</a>
@@ -46,6 +49,10 @@
                     <i class="fas fa-info-circle"></i>
                     INFORMAÇÕES
                 </button>
+                <button class="btn btn-outline-light" role="button" class="btn-add" id="btn-add">
+                    <i class="fas fa-plus"></i>
+                    Adicionar a Lista
+                </button>
             </div>
         </div>
     </main>
@@ -53,7 +60,7 @@
     <div class="container">
         <div class="destaques">
             <h2>
-                Destaques
+                Populares na LUIZFLIX
             </h2>
         </div>
     </div>
@@ -105,7 +112,7 @@
 
     <div class="destaques">
         <h2>
-            Novidades
+            Em Alta
         </h2>
     </div>
 </div>
@@ -161,6 +168,55 @@
                 <button id="fechar" class="botao">X</button>
                 <h2>Informações</h2>
             <p>A história de três pessoas nascidas no mesmo dia, dois homens e uma mulher. A trama navega entre os anos 1980 e os dias atuais, mostrando a infância de cada uma delas em contraste com a vida adulta, marcada por uma grande tragédia familiar.</p>
+            </div>
+        </div>
+        <div id="the-ranch" class="container-info">
+            <div class="pop-up">
+                <button id="fechar" class="botao">X</button>
+                <h2>The Ranch</h2>
+            <p>Ambientada num rancho do Colorado, The Ranch traz Ashton Kutcher como Colt, um jogador semiprofissional de futebol americano que volta do banco de reservas para ajudar a tocar a fazenda da família com seu irmão mais velho Jameson “Rooster” (Danny Masterson) e seu pai Beau (Sam Elliott), a quem ele não via há 15 anos. Debra Winger é Maggie, a mãe de Colt e Rooster e gerente do bar da cidade mais próxima.</p>
+            </div>
+        </div>
+        <div id="the-boys" class="container-info">
+            <div class="pop-up">
+                <button id="fechar" class="botao">X</button>
+                <h2>The Boys</h2>
+            <p>Na trama, conhecemos um mundo em que super-heróis são as maiores celebridades do planeta, e rotineiramente abusam dos seus poderes ao invés de os usarem para o bem.</p>
+            </div>
+        </div>
+        <div id="utopia" class="container-info">
+            <div class="pop-up">
+                <button id="fechar" class="botao">X</button>
+                <h2>Utopia</h2>
+            <p>Fãs de uma icônica revista de quadrinhos descobrem uma continuação secreta da história. Os jovens entram em caçada pelo manuscrito e descobrem qual o real significado da publicação.</p>
+            </div>
+        </div>
+        <div id="doutor" class="container-info">
+            <div class="pop-up">
+                <button id="fechar" class="botao">X</button>
+                <h2>O bom Doutor</h2>
+            <p>Um jovem médico com autismo começa a trabalhar em um famoso hospital. Além dos desafios da profissão, ele terá também que provar sua capacidade a seus colegas e superiores.</p>
+            </div>
+        </div>
+        <div id="coringa" class="container-info">
+            <div class="pop-up">
+                <button id="fechar" class="botao">X</button>
+                <h2>Coringa</h2>
+            <p>Arthur Fleck trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne é seu maior representante.</p>
+            </div>
+        </div>
+        <div id="vikings" class="container-info">
+            <div class="pop-up">
+                <button id="fechar" class="botao">X</button>
+                <h2>Vikings</h2>
+            <p>Ragnar Lothbrok, um jovem que se considera descendente de Odin, é um guerreiro, fazendeiro e chefe de família. Visionário e sonhando viver diversas aventuras, ele acredita que as riquezas sonhadas por seu povo encontram-se além do mar Báltico. Mas para conseguir conquistá-las ele precisa convencer Earl Haraldson, o líder de seu povo, a permitir que ele e seus guerreiros viagem em direção à Inglaterra.</p>
+            </div>
+        </div>
+        <div id="coringa" class="container-info">
+            <div class="pop-up">
+                <button id="fechar" class="botao">X</button>
+                <h2>Coringa</h2>
+            <p>Arthur Fleck trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne é seu maior representante.</p>
             </div>
         </div>
     </footer>

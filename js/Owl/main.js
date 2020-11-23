@@ -43,10 +43,26 @@ informacao.addEventListener('click', function(){
     iniciaPopup ('mais-info');
 });
 
-// function stopDefAction(evt){
-//     evt.preventDefault();
-// }
+$('#titulo1').click(function(){
+    iniciaPopup ('the-ranch');
+});
 
-// const titulo1 = document.getElementById('titulo1');
+$('#titulo2').click(function(){
+    iniciaPopup ('the-boys');
+});
 
-// titulo1.addEventListener('click', stopDefAction, console.log('clicou!'));
+$('#titulo3').click(function(){
+    iniciaPopup ('utopia');
+});
+
+$('#titulo4').click(function(){
+    iniciaPopup ('doutor');
+});
+
+$('#titulo5').click(function(){
+    iniciaPopup ('coringa');
+});
+
+$('#titulo6').click(function(){
+    console.log('aqui');
+});
