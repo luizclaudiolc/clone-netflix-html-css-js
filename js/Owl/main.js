@@ -25,7 +25,7 @@ $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 });
 
-// Função abre e fecha INFORMAÇÕES //
+// Função abre e fecha Popup //
 function iniciaPopup(popuoID){
     const popup = document.getElementById(popuoID);
     if (popup) {
@@ -61,8 +61,4 @@ $('#titulo4').click(function(){
 
 $('#titulo5').click(function(){
     iniciaPopup ('coringa');
-});
-
-$('#titulo6').click(function(){
-    console.log('aqui');
 });

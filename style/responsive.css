@@ -7,6 +7,9 @@
         margin-top: 10px;
         width: 300px;
     }
+    .filme-principal {
+        background-image: url(/img/tiu2.jpg);
+    }
 }
 
 @media sreen and (min-width:1000px){

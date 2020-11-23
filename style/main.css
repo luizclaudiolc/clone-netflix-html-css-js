@@ -24,6 +24,7 @@ header .container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
 header .logo {
@@ -41,10 +42,12 @@ header nav a{
 
 header nav a:hover{
     color: #fff;
+    text-decoration: none;
 }
 
 .logo {
     cursor: pointer;
+    
 }
 
 /* Filme Princial */
@@ -58,6 +61,7 @@ header nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 40px;
 }
 
 .filme-principal .descricao {
@@ -74,7 +78,7 @@ header nav a:hover{
 .botao {
     background-color: rgba(0,0,0,.50);
     border: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: 3px;
     color: white;
     padding: 10px 25px;
     margin-right: 15px;
@@ -94,7 +98,7 @@ header nav a:hover{
 
 .botao a {
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 .botao a:hover{
@@ -122,6 +126,7 @@ header nav a:hover{
 
 .destaques {
     padding: 15px;
+    margin-top: 10px;
 }
 
 .destaques:hover{
