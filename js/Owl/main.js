@@ -1,31 +1,4 @@
-// Carrosel //
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        },
-    },
-    loop:true,
-    margin:15,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
-});
-$('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[1000])
-})
-$('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-});
-
-// Função abre e fecha Popup //
+// Função abre e fecha Popup 
 function iniciaPopup(popuoID){
     const popup = document.getElementById(popuoID);
     if (popup) {
@@ -41,24 +14,46 @@ function iniciaPopup(popuoID){
 const informacao = document.querySelector('#info');
 informacao.addEventListener('click', function(){
     iniciaPopup ('mais-info');
+ });
+
+const trolls = document.querySelector('#titulo10');
+trolls.addEventListener('click', function(){
+  iniciaPopup ('trolls');
 });
 
-$('#titulo1').click(function(){
-    iniciaPopup ('the-ranch');
-});
+// $('#titulo1').click(function(){
+//     iniciaPopup ('the-ranch');
+// });
 
-$('#titulo2').click(function(){
-    iniciaPopup ('the-boys');
-});
-
-$('#titulo3').click(function(){
-    iniciaPopup ('utopia');
-});
-
-$('#titulo4').click(function(){
-    iniciaPopup ('doutor');
-});
-
-$('#titulo5').click(function(){
-    iniciaPopup ('coringa');
-});
+var swiper = new Swiper('.swiper-container', {
+    // slidesPerView: 6,
+    // spaceBetween: 10,
+    // slidesPerGroup: 2,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+      },
+      540: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+      },
+      720: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+      },
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: 10,
+        slidesPerGroup: 2,
+      },
+    }
+  });

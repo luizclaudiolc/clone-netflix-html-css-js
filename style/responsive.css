@@ -17,3 +17,9 @@
         width: 50%;
     }
 }
+
+@media screen and (max-width: 992px){
+    #secondary-links {
+        display: none;
+    }
+}

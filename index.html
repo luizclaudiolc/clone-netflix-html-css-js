@@ -1,262 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Booststrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style/main.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Booststrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="/style/package/css/swiper.min.css">
+        <link rel="stylesheet" href="/style/styles.css">
+        <link rel="stylesheet" href="/style/main.css">
 
-    <!-- Responsividade -->
-    <link rel="stylesheet" href="/style/responsive.css">
+        <!-- Responsividade -->
+        <link rel="stylesheet" href="/style/responsive.css">
 
-    <!-- owl css -->
-    <link rel="stylesheet" href="/style/Owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="/style/Owl/owl.theme.default.min.css">
+        <!-- MaterialIcon -->    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- MaterialIcon -->    
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/img/netflix.png" type="image/x-icon">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/img/netflix.png" type="image/x-icon">
-
-    <title>Luizflix</title>
-</head>
-<body>
-    <header>
-        
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <h2 class="logo">LUIZFLIX</h2>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links-nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="collapse navbar-collapse" id="links-nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item-active">
-                        <a class="nav-link" href="#">Início <span class="sr-only">(página atual)</span></a>
-                    </li>
-                    <li class="nav-item-active">
-                        <a class="nav-link" href="#">Filmes <span class="sr-only">(página atual)</span></a>
-                    </li>
-                    <li class="nav-item-active">
-                        <a class="nav-link" href="#">Séries <span class="sr-only">(página atual)</span></a>
-                    </li>
-                    <li class="nav-item-active">
-                        <a class="nav-link" href="#">Documentários <span class="sr-only">(página atual)</span></a>
-                    </li>
-                </ul>
-            </div>
-
-
-        </div>
-
-        <!-- <div>
-            <div class="container">
+        <title>Luizflix</title>
+    </head>
+    <body>
+        <header>
+            
+            <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
                 <h2 class="logo">LUIZFLIX</h2>
-                <button>
-                    <i class="material-icons">menu</i>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links-nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <nav class="collapse navbar-collapse">
-                    <ul class="nav navbar navbar-rigth">
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Séries</a></li>
-                        <li><a href="#">Filmes</a></li>
-                        <li><a href="#">Documentários</a></li>
+                <di v class="collapse navbar-collapse" id="links-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item-active">
+                            <a class="nav-link" href="#">Início<span class="sr-only">(página atual)</span></a>
+                        </li>
+                        <li class="nav-item-active">
+                            <a class="nav-link" href="#">Séries<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item-active">
+                            <a class="nav-link" href="#">Filmes<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item-active">
+                            <a class="nav-link" href="#">Bombando<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item-active">
+                            <a class="nav-link" href="#">Minha lista<span class="sr-only"></span></a>
+                        </li>
                     </ul>
-                </nav>
+                </di>
+                <div class="nav justify-content-end" id="secondary-links">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active">
+                                <span class="material-icons">search</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">
+                                <span class="material-icons">card_giftcard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">
+                                <span class="material-icons">notifications</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <img src="/img/Luiz.jpg" style="width: 32px; height: 32; border: 1px solid #141414; border-radius: 3px;" alt="">
+                    </div>
+                </div>
             </div>
-        </div> -->
-    </header>
-    <main>
-        <div class="filme-principal">
-            <div class="container">
-                <h3 class="titulo">This Is Us</h3>
-                <span><strong>Top 2 no Brasil hoje</strong></span>
-                <p class="descricao">
-                    A série acompanha um grupo de pessoas cujos caminhos se cruzam, fazendo com que as suas histórias se entrelacem de maneira muito peculiar.
-                </p>
+        </header>
+        <main>
+            <div class="filme-principal">
+                <div class="container">
+                    <h3 class="titulo">This Is Us</h3>
+                    <span><strong>Top 2 no Brasil hoje</strong></span>
+                    <p class="descricao">
+                        A série acompanha um grupo de pessoas cujos caminhos se cruzam, fazendo com que as suas histórias se entrelacem de maneira muito peculiar.
+                    </p>
+                </div>
+                <div  class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        <a href="https://www.youtube.com/watch?v=tefwfQEawtw" target="_blank" rel="noopener noreferrer">ASSISTIR AGORA</a>
+                    </button>
+                    <button role="button" class="botao" id="info">
+                        <i class="fas fa-info-circle"></i>
+                        INFORMAÇÕES
+                    </button>
+                    <button class="btn btn-outline-light" role="button" class="btn-add" id="btn-add">
+                        <i class="fas fa-plus"></i>
+                        Minha a Lista
+                    </button>
+                </div>
             </div>
-            <div  class="botoes">
-                <button role="button" class="botao">
-                    <i class="fas fa-play"></i>
-                    <a href="https://www.youtube.com/watch?v=tefwfQEawtw" target="_blank" rel="noopener noreferrer">ASSIS AGORA</a>
-                </button>
-                <button role="button" class="botao" id="info">
-                    <i class="fas fa-info-circle"></i>
-                    INFORMAÇÕES
-                </button>
-                <button class="btn btn-outline-light" role="button" class="btn-add" id="btn-add">
-                    <i class="fas fa-plus"></i>
-                    Adicionar a Lista
-                </button>
+        
+        <!-- Swiper -->
+        <div class="carousel">
+            <div class="sessoes">
+                <h5>Mais vistos</h5>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/photo1.jpg" alt="titulo1"></div>
+                <div class="swiper-slide"><img src="/img/photo2.jpg" alt="titulo2"></div>
+                <div class="swiper-slide"><img src="/img/photo3.jpg" alt="titulo3"></div>
+                <div class="swiper-slide"><img src="/img/photo4.jpg" alt="titulo4"></div>
+                <div class="swiper-slide"><img src="/img/photo5.jpg" alt="titulo5"></div>
+                <div class="swiper-slide"><img src="/img/photo6.jpg" alt="titulo6"></div>
+                <div class="swiper-slide"><img src="/img/photo7.jpg" alt="titulo7"></div>
+                <div class="swiper-slide"><img src="/img/photo8.jpg" alt="titulo8"></div>
+                <div class="swiper-slide"><img src="/img/photo9.jpg" alt="titulo9"></div>
+                <div class="swiper-slide"><img src="/img/photo10.jpg" alt="titulo10" id="titulo10"></div>      
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="sessoes">
+                <h5>Lançamentos</h5>
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/photo11.jpg" alt="titulo11"></div>
+                <div class="swiper-slide"><img src="/img/photo12.jpg" alt="titulo12"></div>
+                <div class="swiper-slide"><img src="/img/photo13.jpg" alt="titulo13"></div>
+                <div class="swiper-slide"><img src="/img/photo14.jpg" alt="titulo14"></div>
+                <div class="swiper-slide"><img src="/img/photo15.jpg" alt="titulo15"></div>
+                <div class="swiper-slide"><img src="/img/photo16.jpg" alt="titulo16"></div>
+                <div class="swiper-slide"><img src="/img/photo17.jpg" alt="titulo17"></div>
+                <div class="swiper-slide"><img src="/img/photo18.jpg" alt="titulo18"></div>
+                <div class="swiper-slide"><img src="/img/photo19.jpg" alt="titulo19"></div>
+                <div class="swiper-slide"><img src="/img/photo20.jpg" alt="titulo20"></div>      
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="sessoes">
+                <h5>Bombando</h5>
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/photo21.jpg" alt="titulo21"></div>
+                <div class="swiper-slide"><img src="/img/photo22.jpg" alt="titulo22"></div>
+                <div class="swiper-slide"><img src="/img/photo23.jpg" alt="titulo23"></div>
+                <div class="swiper-slide"><img src="/img/photo24.jpg" alt="titulo24"></div>
+                <div class="swiper-slide"><img src="/img/photo25.jpg" alt="titulo25"></div>
+                <div class="swiper-slide"><img src="/img/photo26.jpg" alt="titulo26"></div>
+                <div class="swiper-slide"><img src="/img/photo27.jpg" alt="titulo27"></div>
+                <div class="swiper-slide"><img src="/img/photo28.jpg" alt="titulo28"></div>
+                <div class="swiper-slide"><img src="/img/photo29.jpg" alt="titulo29"></div>
+                <div class="swiper-slide"><img src="/img/photo30.jpg" alt="titulo30"></div>      
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
+
     </main>
-
-    <div class="container">
-        <div class="destaques">
-            <h2>
-                Populares na LUIZFLIX
-            </h2>
-        </div>
-    </div>
-
-    <div class="carrosel-filmes">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <label class="label" for="titulo1">The Ranch</label>
-                <img class="box-filme" src="/img/photo1.jpg" alt="titilo1" id="titulo1">
-            </div>
-            <div class="item">
-                <label class="label" for="titulo2">The Boys</label>
-                <img class="box-filme" src="/img/photo2.jpg" alt="titilo2" id="titulo2">
-            </div>
-            <div class="item">
-                <label class="label" for="titulo3">Utopia</label>
-                <img class="box-filme" src="/img/photo3.jpg" alt="titilo3" id="titulo3">
-            </div>
-            <div class="item">
-                <label class="label" for="titulo4">O bom doutor</label>
-                <img class="box-filme" src="/img/photo4.jpg" alt="titilo4" id="titulo4">
-            </div>
-            <div class="item">
-                <label class="label" for="titulo5">Corinha</label>
-                <img class="box-filme" src="/img/photo5.jpg" alt="titilo5" id="titulo5">
-            </div>
-            <div class="item">
-                <label class="label" for="titulo6">Vikings</label>
-                <img class="box-filme" src="/img/photo6.jpg" alt="titilo6" id="titulo6">
-            </div>
-            <div class="item">
-                <label class="label" for="titulo7">Dia de Treinamento</label>
-                <img class="box-filme" src="/img/photo7.jpg" alt="titilo7" id="titulo7">
-            </div>
-            <div class="item">
-                <label class="label" for="titulo8">The Walking Dead</label>
-                <img class="box-filme" src="/img/photo8.jpg" alt="titilo8" id="titulo8">
-            </div>
-            <div class="item">
-                <label class="label" for="titulo9">Mandalorian</label>
-                <img class="box-filme" src="/img/photo9.jpg" alt="titilo9" id="titulo9">
-            </div>
-            <div class="item">
-                <label class="label" for="titulo10">S.A.W.T</label>
-                <img class="box-filme" src="/img/photo10.jpg" alt="titilo10" id="titulo10">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="destaques">
-            <h2>
-                Em Alta
-            </h2>
-        </div>
-    </div>    
-</div>
-
-<div class="carrosel-filmes">
-    <div class="owl-carousel owl-theme">
-        <div class="item">
-            <label class="label" for="titulo11">Parallel</label>
-            <img class="box-filme" src="/img/photo11.jpg" alt="titilo11" id="titulo11">
-        </div>
-        <div class="item">
-            <label class="label" for="titulo12">Carmem Sandiego</label>
-            <img class="box-filme" src="/img/photo12.jpg" alt="titilo12" id="titulo12">
-        </div>
-        <div class="item">
-            <label class="label" for="titulo13">Fear The Walking Dead</label>
-            <img class="box-filme" src="/img/photo13.jpg" alt="titilo13" id="titulo13">
-        </div>
-        <div class="item">
-            <label class="label" for="titulo14">Viva, a vida é uma festa</label>
-            <img class="box-filme" src="/img/photo14.jpg" alt="titilo14" id="titulo14">
-        </div>
-        <div class="item">
-            <label class="label" for="titulo15">Desafiando Gigantes</label>
-            <img class="box-filme" src="/img/photo15.jpg" alt="titilo15" id="titulo15">
-        </div>
-        <div class="item">
-            <label class="label" for="titulo16">Treino para Vida</label>
-            <img class="box-filme" src="/img/photo16.jpg" alt="titilo16" id="titulo16">
-        </div>
-        <div class="item">
-            <label class="label" for="titulo17">Interestelar</label>
-            <img class="box-filme" src="/img/photo17.jpg" alt="titilo17" id="titulo17">
-        </div>
-        <div class="item">
-            <label class="label" for="titulo18">1Contra Todos</label>
-            <img class="box-filme" src="/img/photo18.jpg" alt="titilo18" id="titulo18">
-        </div>
-        <div class="item">
-            <label class="label" for="titulo19">Yu Yu Hakusho</label>
-            <img class="box-filme" src="/img/photo19.jpg" alt="titilo19" id="titulo19">
-        </div>
-        <div class="item">
-            <label class="label" for="titulo20">InuYasha</label>
-            <img class="box-filme" src="/img/photo20.jpg" alt="titilo20" id="titulo20">
-        </div>
-    </div>
-</div>
 
     <footer>
         <div id="mais-info" class="container-info">
             <div class="pop-up">
                 <button id="fechar" class="botao">X</button>
-                <h2>Informações</h2>
-            <p>A história de três pessoas nascidas no mesmo dia, dois homens e uma mulher. A trama navega entre os anos 1980 e os dias atuais, mostrando a infância de cada uma delas em contraste com a vida adulta, marcada por uma grande tragédia familiar.</p>
+                    <h2>Informações</h2>
+                    <p>A história de três pessoas nascidas no mesmo dia, dois homens e uma mulher. A trama navega entre os anos 1980 e os dias atuais, mostrando a infância de cada uma delas em contraste com a vida adulta, marcada por uma grande tragédia familiar.</p>
             </div>
         </div>
-        <div id="the-ranch" class="container-info">
+
+        
+
+        <div id="trolls" class="container-info">
             <div class="pop-up">
                 <button id="fechar" class="botao">X</button>
-                <h2>The Ranch</h2>
-            <p>Ambientada num rancho do Colorado, The Ranch traz Ashton Kutcher como Colt, um jogador semiprofissional de futebol americano que volta do banco de reservas para ajudar a tocar a fazenda da família com seu irmão mais velho Jameson “Rooster” (Danny Masterson) e seu pai Beau (Sam Elliott), a quem ele não via há 15 anos. Debra Winger é Maggie, a mãe de Colt e Rooster e gerente do bar da cidade mais próxima.</p>
+                    <h2>Trolls</h2>
+                    <p>Poppy, a líder otimista dos trolls, e Branch, o seu oposto, embarcam em uma aventura que os leva a um mundo que nunca conheceram antes.</p>
+                <button role="button" class="btn btn-outline-light">
+                    <i class="fas fa-play"></i>
+                    <a href="https://www.youtube.com/watch?v=4l1z5SGdMEo" target="_black" rel="noopener noreferrer">Reproduzir</a>
+                </button>
+                <button class="btn btn-outline-light" role="button" class="btn-add">
+                    <i class="fas fa-plus"></i>
+                     Minha a Lista
+                </button>
             </div>
         </div>
-        <div id="the-boys" class="container-info">
-            <div class="pop-up">
-                <button id="fechar" class="botao">X</button>
-                <h2>The Boys</h2>
-            <p>Na trama, conhecemos um mundo em que super-heróis são as maiores celebridades do planeta, e rotineiramente abusam dos seus poderes ao invés de os usarem para o bem.</p>
-            </div>
-        </div>
-        <div id="utopia" class="container-info">
-            <div class="pop-up">
-                <button id="fechar" class="botao">X</button>
-                <h2>Utopia</h2>
-            <p>Fãs de uma icônica revista de quadrinhos descobrem uma continuação secreta da história. Os jovens entram em caçada pelo manuscrito e descobrem qual o real significado da publicação.</p>
-            </div>
-        </div>
-        <div id="doutor" class="container-info">
-            <div class="pop-up">
-                <button id="fechar" class="botao">X</button>
-                <h2>O bom Doutor</h2>
-            <p>Um jovem médico com autismo começa a trabalhar em um famoso hospital. Além dos desafios da profissão, ele terá também que provar sua capacidade a seus colegas e superiores.</p>
-            </div>
-        </div>
-        <div id="coringa" class="container-info">
-            <div class="pop-up">
-                <button id="fechar" class="botao">X</button>
-                <h2>Coringa</h2>
-            <p>Arthur Fleck trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne é seu maior representante.</p>
-            </div>
-        </div>
-        <div id="parallel" class="container-info">
-            <div class="pop-up">
-                <button id="fechar" class="botao">X</button>
-                <h2>Parallel</h2>
-            <p>Arthur Fleck trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne é seu maior representante.</p>
-            </div>
-        </div>        
-    </footer>
-    
-    <!-- Fontawesome Icones -->
-    <script src="https://kit.fontawesome.com/1a1d331282.js" crossorigin="anonymous"></script>
-    <!-- owl JS -->
-    <script src="/js/Owl/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="/js/Owl/owl.carousel.min.js"></script>
-    <script src="/js/Owl/main.js"></script>
-</body>
+        </footer>
+        
+        
+        
+        <!-- Fontawesome Icones -->
+        <script src="https://kit.fontawesome.com/1a1d331282.js" crossorigin="anonymous"></script>
+        
+        <!-- Scripts -->
+        
+        <script src="/style/package/js/swiper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        
+        <!-- Initialize Swiper -->
+        <script src="/js/Owl/main.js"></script>
+    </body>
 </html>
