@@ -21,9 +21,22 @@ trolls.addEventListener('click', function(){
   iniciaPopup ('trolls');
 });
 
-// $('#titulo1').click(function(){
-//     iniciaPopup ('the-ranch');
-// });
+$('#titulo1').click(function(){
+  iniciaPopup('the-ranch')
+});
+
+const rick = document.querySelector('#titulo2');
+rick.addEventListener('click', function(){
+  iniciaPopup ('rick-morty');
+});
+
+$('#titulo3').click(function(){
+  iniciaPopup ('vikings');
+});
+
+$('#titulo4').click(function(){
+  iniciaPopup ('twd');
+});
 
 var swiper = new Swiper('.swiper-container', {
     // slidesPerView: 6,

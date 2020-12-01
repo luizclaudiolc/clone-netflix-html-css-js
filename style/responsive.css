@@ -8,7 +8,11 @@
         width: 300px;
     }
     .filme-principal {
-        background-image: url(/img/tiu2.jpg);
+        background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(/img/tiu2.jpg);
+        background-size: cover;
+    }
+    #btn-add {
+        display: none;
     }
 }
 
@@ -22,4 +26,4 @@
     #secondary-links {
         display: none;
     }
-}
+}   
