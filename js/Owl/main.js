@@ -16,7 +16,7 @@ informacao.addEventListener('click', function(){
     iniciaPopup ('mais-info');
  });
 
-const trolls = document.querySelector('#titulo10');
+let trolls = document.querySelector('#titulo10');
 trolls.addEventListener('click', function(){
   iniciaPopup ('trolls');
 });
@@ -25,7 +25,7 @@ $('#titulo1').click(function(){
   iniciaPopup('the-ranch')
 });
 
-const rick = document.querySelector('#titulo2');
+let rick = document.querySelector('#titulo2');
 rick.addEventListener('click', function(){
   iniciaPopup ('rick-morty');
 });
@@ -37,6 +37,20 @@ $('#titulo3').click(function(){
 $('#titulo4').click(function(){
   iniciaPopup ('twd');
 });
+
+const blackMirror = document.querySelector('#titulo5');
+  blackMirror.addEventListener('click', function(){
+    iniciaPopup ('black-mirror');
+});
+
+$('#titulo16').click(function(){
+  iniciaPopup ('robot');
+});
+
+$('#titulo11').click(function(){
+  iniciaPopup ('shaft');
+});
+
 
 var swiper = new Swiper('.swiper-container', {
     // slidesPerView: 6,
